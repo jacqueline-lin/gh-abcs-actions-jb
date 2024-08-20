@@ -22,7 +22,8 @@ jobs:
       # Cancel all matrix jobs if one of them fails
       fail-fast: true
       matrix:
-        # our matrix for testing across OSs
+        # our matrix for testing across node versions and OSs
+        node-version: [12, 14]
         os: [macos-latest, windows-latest, ubuntu-latest]
     
     steps:
